@@ -1,9 +1,11 @@
-# File: app.py
 import streamlit as st
 import pandas as pd
+import base64
+import os
 
-st.set_page_config(page_title="MPL Standings", layout="wide")
+st.set_page_config(page_title="MPL ID Dashboard", layout="wide")
 
+# --- KAMUS LOKASI LOGO LOKAL ---
 # Sesuaikan nama file .png/.jpg dengan yang ada di folder 'logos' milikmu
 LOGO_MAP = {
     "Onic": "logo/ONIC_Esports.png",
@@ -67,7 +69,11 @@ else:
     standings = standings.sort_values(by=["Match Point", "Net Game Win"], ascending=[False, False]).reset_index(drop=True)
     standings.index = standings.index + 1
     
-    df_standings = standings[["Team", "Match Point", "Match W-L", "Net Game Win", "Game W-L"]]
+    # Menambahkan kolom Logo lokal yang sudah di-convert
+    standings["Logo"] = standings["Team"].map(LOGO_MAP).apply(get_image_base64)
+    
+    # Susun kolom, Logo di paling depan
+    df_standings = standings[["Logo", "Team", "Match Point", "Match W-L", "Net Game Win", "Game W-L"]]
 
     def highlight_standings(row):
         if row.name <= 2: return ['background-color: rgba(173, 216, 230, 0.2)'] * len(row)
@@ -76,5 +82,13 @@ else:
 
     styled_standings = df_standings.style.apply(highlight_standings, axis=1).format({"Net Game Win": "{:+d}"})
 
-    st.dataframe(styled_standings, use_container_width=True, height=400)
-    st.markdown("**Keterangan:** 🟦 *Top 2 (Playoff Upper Bracket)* | ⬜ *Rank 3-6 (Playoff via Play-In)* | 🟥 *Bottom 3 (Not Qualified)*")
+    # Tampilkan tabel dengan image column
+    st.dataframe(
+        styled_standings, 
+        use_container_width=True, 
+        height=400,
+        column_config={
+            "Logo": st.column_config.ImageColumn("Logo", width="small") # width="small" memastikan ukuran semua logo rata
+        }
+    )
+    st.markdown("**Keterangan:** 🟦 *Top 2* | ⬜ *Rank 3-6* | 🟥 *Bottom 3*")
