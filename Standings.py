@@ -91,4 +91,4 @@ else:
             "Logo": st.column_config.ImageColumn("Logo", width="small") # width="small" memastikan ukuran semua logo rata
         }
     )
-    st.markdown("**Keterangan:** 🟦 *Top 2* | ⬜ *Rank 3-6* | 🟥 *Bottom 3*")
+    st.markdown("**Keterangan:** 🟦 *Top 2 : Playoff Upper Bracket* | ⬜ *Rank 3-6 : Playoff via Play-In* | 🟥 *Bottom 3 : Not Qualified*")
