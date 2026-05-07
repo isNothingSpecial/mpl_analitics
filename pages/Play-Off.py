@@ -8,15 +8,15 @@ st.set_page_config(page_title="MPL ID Standings & Playoff", layout="wide")
 
 # --- KAMUS LOKASI LOGO LOKAL ---
 LOGO_MAP = {
-    "Onic": "logos/onic.png",
-    "Dewa United Esport": "logos/dewa.png",
-    "Alter Ego": "logos/alterego.png",
-    "Team Liquid ID": "logos/liquid.png",
-    "EVOS": "logos/evos.png",
-    "Geek Fam ID": "logos/geekfam.png",
-    "Bigetron by Vitality": "logos/btr.png",
-    "NAVI": "logos/navi.png",
-    "RRQ": "logos/rrq.png"
+    "Onic": "logo/ONIC_Esports.png",
+    "Dewa United Esport": "logo/Dewa United Esports.png",
+    "Alter Ego": "logo/Alter Ego.png",
+    "Team Liquid ID": "logo/Team Liquid.png",
+    "EVOS": "logo/EVOS Esports.png",
+    "Geek Fam ID": "logo/Geek Fam.png",
+    "Bigetron by Vitality": "logo/Bigetron Vitality.png",
+    "NAVI": "logo/NAVI.png",
+    "RRQ": "logo/RRQ.png"
 }
 
 # Fungsi Base64 untuk Logo di Tabel
