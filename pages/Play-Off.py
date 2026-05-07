@@ -144,5 +144,3 @@ with tab_playoff:
             - Tim yang kalah di **Play-ins** langsung tereliminasi.
             - Format: **BO5** (Semifinals) & **BO7** (Grand Final).
             """)
-            
-        st.image("https://raw.githubusercontent.com/your-repo/path-to-image.png", caption="Referensi Mekanisme Bracket MPL ID") # Ganti dengan gambar referensi lokal jika ada
