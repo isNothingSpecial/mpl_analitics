@@ -96,75 +96,98 @@ with tab_standings:
         st.markdown("**Keterangan:** 🟦 *Top 2: Upper Bracket* | ⬜ *Rank 3-6: Play-In* | 🟥 *Bottom 3: Not Qualified*")
 
 # --- TAB 2: BAGAN PLAYOFF LENGKAP ---
+# --- TAB 2: BAGAN PLAYOFF LENGKAP ---
 with tab_playoff:
     st.subheader("Bagan Playoff (Double Elimination)")
     
     if len(df_standings) < 6:
         st.warning("Menunggu data klasemen minimal 6 tim untuk menyusun bagan playoff.")
+    elif not os.path.exists("Match Playoff.csv"):
+        st.warning("Menunggu file data Playoff dibuat di Match Controller.")
     else:
-        # Ambil Top 6 Tim
+        # 1. Ambil Top 6 Tim dari Klasemen
         top_6 = df_standings.head(6)['Team'].tolist()
         r1, r2, r3, r4, r5, r6 = top_6[0], top_6[1], top_6[2], top_6[3], top_6[4], top_6[5]
 
-        # Desain Bagan (4 Kolom untuk menunjukkan flow dari kiri ke kanan)
+        # 2. Baca file skor Playoff
+        df_po = pd.read_csv("Match Playoff.csv", sep=";")
+
+        # 3. Fungsi untuk mengekstrak tim, skor, pemenang, dan yang kalah
+        def get_match_info(idx, t_home, t_away):
+            s_h = df_po.at[idx, 'Score Home'] if pd.notna(df_po.at[idx, 'Score Home']) else 0
+            s_a = df_po.at[idx, 'Score Away'] if pd.notna(df_po.at[idx, 'Score Away']) else 0
+            
+            # Tentukan pemenang dan yang kalah sementara
+            winner, loser = f"Winner M{idx+1}", f"Loser M{idx+1}"
+            if s_h > s_a: 
+                winner, loser = t_home, t_away
+            elif s_a > s_h: 
+                winner, loser = t_away, t_home
+                
+            return t_home, int(s_h), t_away, int(s_a), winner, loser
+
+        # 4. Kalkulasi Alur Turnamen (M1 sampai M8)
+        h1, sh1, a1, sa1, w1, l1 = get_match_info(0, r3, r6)
+        h2, sh2, a2, sa2, w2, l2 = get_match_info(1, r4, r5)
+        h3, sh3, a3, sa3, w3, l3 = get_match_info(2, r2, w1)
+        h4, sh4, a4, sa4, w4, l4 = get_match_info(3, r1, w2)
+        h5, sh5, a5, sa5, w5, l5 = get_match_info(4, l3, l4)
+        h6, sh6, a6, sa6, w6, l6 = get_match_info(5, w3, w4)
+        h7, sh7, a7, sa7, w7, l7 = get_match_info(6, w5, l6)
+        h8, sh8, a8, sa8, w8, l8 = get_match_info(7, w6, w7)
+
+        # 5. Desain Bagan (4 Kolom)
         c1, c2, c3, c4 = st.columns(4)
 
         with c1:
             st.markdown("#### Babak 1 (Play-Ins)")
-            st.caption("Loser Eliminated")
             with st.container(border=True):
-                st.write("**Match 1 (M1)**")
-                st.write(f"🔹 {r3} (R3)")
-                st.write(f"🔹 {r6} (R6)")
+                st.markdown("**Match 1**")
+                st.write(f"{h1} : **{sh1}**")
+                st.write(f"{a1} : **{sa1}**")
             
             with st.container(border=True):
-                st.write("**Match 2 (M2)**")
-                st.write(f"🔹 {r4} (R4)")
-                st.write(f"🔹 {r5} (R5)")
+                st.markdown("**Match 2**")
+                st.write(f"{h2} : **{sh2}**")
+                st.write(f"{a2} : **{sa2}**")
 
         with c2:
             st.markdown("#### Babak 2")
-            st.caption("Upper Semifinals")
             with st.container(border=True):
-                st.write("**Match 3 (M3)**")
-                st.write(f"🔹 {r2} (R2)")
-                st.write(f"🔹 Winner M1")
+                st.markdown("**Match 3 (Upper Semi)**")
+                st.write(f"{h3} : **{sh3}**")
+                st.write(f"{a3} : **{sa3}**")
             
             with st.container(border=True):
-                st.write("**Match 4 (M4)**")
-                st.write(f"🔹 {r1} (R1)")
-                st.write(f"🔹 Winner M2")
+                st.markdown("**Match 4 (Upper Semi)**")
+                st.write(f"{h4} : **{sh4}**")
+                st.write(f"{a4} : **{sa4}**")
                 
             st.markdown("---")
-            st.caption("Lower Semifinal")
             with st.container(border=True):
-                st.write("**Match 5 (M5)**")
-                st.write(f"🔻 Loser M3")
-                st.write(f"🔻 Loser M4")
+                st.markdown("**Match 5 (Lower Semi)**")
+                st.write(f"{h5} : **{sh5}**")
+                st.write(f"{a5} : **{sa5}**")
 
         with c3:
             st.markdown("#### Babak 3 (Finals)")
-            st.caption("Upper Bracket Final")
             with st.container(border=True):
-                st.write("**Match 6 (M6)**")
-                st.write(f"⭐ Winner M3")
-                st.write(f"⭐ Winner M4")
+                st.markdown("**Match 6 (Upper Final)**")
+                st.write(f"{h6} : **{sh6}**")
+                st.write(f"{a6} : **{sa6}**")
                 
             st.markdown("---")
-            st.caption("Lower Bracket Final")
             with st.container(border=True):
-                st.write("**Match 7 (M7)**")
-                st.write(f"🔥 Winner M5")
-                st.write(f"🔻 Loser M6")
+                st.markdown("**Match 7 (Lower Final)**")
+                st.write(f"{h7} : **{sh7}**")
+                st.write(f"{a7} : **{sa7}**")
 
         with c4:
             st.markdown("#### Babak 4")
-            st.caption("Grand Final (BO7)")
-            # Padding untuk menurunkan kotak ke tengah
             st.markdown("<br><br><br>", unsafe_allow_html=True)
             with st.container(border=True):
-                st.markdown("<h4 style='text-align:center; color:gold;'>Match 8 (M8)</h4>", unsafe_allow_html=True)
-                st.write(f"🏆 Winner M6 (Upper)")
-                st.write(f"🏆 Winner M7 (Lower)")
+                st.markdown("<h4 style='text-align:center; color:gold;'>Grand Final (M8)</h4>", unsafe_allow_html=True)
+                st.write(f"🏆 {h8} : **{sh8}**")
+                st.write(f"🏆 {a8} : **{sa8}**")
                 
-    st.info("💡 Bagan ini akan terus ter-update secara otomatis menyesuaikan peringkat 1 hingga 6 di akhir Regular Season.")
+    st.info("💡 Bagan ini otomatis membaca hasil dari halaman Match Control Center.")
