@@ -4,6 +4,28 @@ import pandas as pd
 
 st.set_page_config(page_title="MPL Standings", layout="wide")
 
+# Sesuaikan nama file .png/.jpg dengan yang ada di folder 'logos' milikmu
+LOGO_MAP = {
+    "Onic": "logo/ONIC_Esports.png",
+    "Dewa United Esport": "logo/Dewa United Esports.png",
+    "Alter Ego": "logo/Alter Ego.png",
+    "Team Liquid ID": "logo/Team Liquid.png",
+    "EVOS": "logo/EVOS Esports.png",
+    "Geek Fam ID": "logo/Geek Fam.png",
+    "Bigetron by Vitality": "logo/Bigetron Vitality.png",
+    "NAVI": "logo/NAVI.png",
+    "RRQ": "logo/RRQ.png"
+}
+
+# Fungsi mengubah gambar lokal ke Base64 untuk Tabel
+def get_image_base64(img_path):
+    if pd.isna(img_path) or not os.path.exists(img_path):
+        return None # Mengembalikan kosong jika gambar tidak ditemukan
+    with open(img_path, "rb") as img_file:
+        encoded_string = base64.b64encode(img_file.read()).decode()
+        # Sesuaikan format image/png atau image/jpeg
+        return f"data:image/png;base64,{encoded_string}"
+
 def load_data():
     df = pd.read_csv("Match.csv", sep=";")
     replacements = {"Bigetron By Vitality": "Bigetron by Vitality"}
