@@ -1,0 +1,213 @@
+Match ID,Blue Team,Blue Team EXP Laner,Blue Team Jungler,Blue Team Midlaner,Blue Team Gold Laner,Blue Team Roamer,Red Team,Red Team EXP Laner,Red Team Jungler,Red Team Midlaner,Red Team Gold Laner,Red Team Roamer,Winner
+MPLID_S14_GRP_W1_D1_M1_G1,Team Liquid ID,Edith,Julian,Luo Yi,Moskov,Minotaur,Fnatic Onic,Arlott,Roger,Valentina,Harith,Chou,0
+MPLID_S14_GRP_W1_D1_M1_G2,Fnatic Onic,Thamuz,Nolan,Va;entina,Harith,Minotaur,Team Liquid ID,Arlott,Joy,Vexana,Roger,Edith,1
+MPLID_S14_GRP_W1_D1_M2_G1,Dewa United Esport,Hylos,Julian,Valentina,Claude,Edith,EVOS Glory,Ruby,Nolan,Vexana,Moskov,Khufra,1
+MPLID_S14_GRP_W1_D1_M2_G2,Dewa United Esport,X.Borg,Julian,Valentina,Moskov,Arlott,EVOS Glory,Hylos,Roger,Zask,Claude,Guinevere,0
+MPLID_S14_GRP_W1_D1_M2_G3,Dewa United Esport,Paquito,Julian,Valentina,Moskov,Hylos,EVOS Glory,X.Borg,Roger,Novaria,Harith,Guinevere,1
+MPLID_S14_GRP_W1_D2_M1_G1,Team Liquid ID,Barats,Nolan,Zask,Moskov,Minotaur,Bigetron Alpha,Terizla,Roger,Valentina,Ruby,Mathilda,0
+MPLID_S14_GRP_W1_D2_M1_G2,Team Liquid ID,Edith,Roger,Valentina,Harith,Chou,Bigetron Alpha,Arlott,Yin,Luo Yi,Moskov,Ruby,0
+MPLID_S14_GRP_W1_D2_M2_G1,RRQ,Edith,Alpha,Zhuxin,Karrie,Ruby,EVOS Glory,Terizla,Hayabusa,Zask,Roger,Carmilla,1
+MPLID_S14_GRP_W1_D2_M2_G2,RRQ,Edith,Nolan,Yve,Claude,Ruby,EVOS Glory,Yu Zhong,Alpha,Zhuxin,Roger,Minotaur,1
+MPLID_S14_GRP_W1_D2_M3_G1,Geek Fam ID,Arlott,Julian,Zhuxin,Moskov,Helcurt,Alter Ego,Hylos,Lancelot,Valentina,Karrie,Edith,1
+MPLID_S14_GRP_W1_D2_M3_G2,Geek Fam ID,Arlott,Roger,Zask,Karrie,Edith,Alter Ego,Terizla,Alpha,Valentina,Moskov,Ruby,0
+MPLID_S14_GRP_W1_D2_M3_G3,Geek Fam ID,Arlott,Julian,Lylia,Roger,Khufra,Alter Ego,Ruby,Hayabusa,Zask,Claude,Tigreal,0
+MPLID_S14_GRP_W1_D3_M1_G1,RBL,Barats,Hayabusa,Zask,Moskov,Edith,Fnatic Onic,Arlott,Roger,Aurora,Harith,Grock,0
+MPLID_S14_GRP_W1_D3_M1_G2,Fnatic Onic,Arlott,Julian,Valentina,Roger,Minotaur,RBL,Terizla,Hayabusa,Zask,Karrie,Khufra,0
+MPLID_S14_GRP_W1_D3_M1_G3,RBL,Edith,Hayabusa,Vexana,Melissa,Chou,Fnatic Onic,Terizla,Roger,Faramis,Claude,Khufra,0
+MPLID_S14_GRP_W1_D3_M2_G1,RRQ,Terizla,Julian,Aurora,Roger,Minotaur,Bigetron Alpha,Ruby,X.Borg,Valentina,Moskov,Arlott,0
+MPLID_S14_GRP_W1_D3_M2_G2,Bigetron Alpha,Terizla,Ling,Valentina,Harith,Grock,RRQ,Arlott,Fredrinn,Faramis,Roger,Aurora,0
+MPLID_S14_GRP_W1_D3_M2_G3,Bigetron Alpha,Arlott,Ling,Faramis,Harith,Tigreal,RRQ,Edith,Hayabusa,Zask,Claude,Jawhead,1
+MPLID_S14_GRP_W1_D3_M3_G1,Geek Fam ID,Gloo,Fanny,Zhuxin,Harith,Khufra,Dewa United Esport,Terizla,Alpha,Aurora,Roger,Ruby,0
+MPLID_S14_GRP_W1_D3_M3_G2,Dewa United Esport,Edith,Alpha,Aurora,Roger,Chou,Geek Fam ID,Arlott,Hayabusa,Zhuxin,Claude,Terizla,1
+MPLID_S14_GRP_W2_D1_M1_G1,RBL,Gloo,Julian,Zask,Moskov,Terizla,RRQ,Edith,Roger,Aurora,Natan,Franco,0
+MPLID_S14_GRP_W2_D1_M1_G2,RBL,Terizla,Julian,Zask,Beatrix,Kaja,RRQ,Edith,Alpha,Aurora,Natan,Khufra,0
+MPLID_S14_GRP_W2_D1_M2_G1,EVOS Glory,Hylos,Hayabusa,Vexana,Harith,Jawhead,Team Liquid ID,Edith,X.Borg,Zhask,Moskov,Mathilda,0
+MPLID_S14_GRP_W2_D1_M2_G2,Team Liquid ID,Hylos,Fanny,Zhuxin,Harith,Chou,EVOS Glory,Gloo,Lancelot,Zhask,Moskov,Edith,0
+MPLID_S14_GRP_W2_D1_M2_G3,EVOS Glory,Hylos,Hayabusa,Aurora,Claude,Jawhead,Team Liquid ID,Edith,Joy,Zhask,Karrie,Minotaur,0
+MPLID_S14_GRP_W2_D2_M1_G1,Bigetron Alpha,Ruby,Benedetta,Valentina,Harith,Grock,Alter Ego,Hylos,Roger,Zask,Lunox,Tigreal,1
+MPLID_S14_GRP_W2_D2_M1_G2,Bigetron Alpha,Ruby,X.Borg,Luo Yi,Harith,Arlott,Alter Ego,Hylos,Roger,Valentina,Claude,Tigreal,1
+MPLID_S14_GRP_W2_D2_M2_G1,Fnatic Onic,Gloo,Hayabusa,Zhask,Claude,Chou,RRQ,Thamuz,Roger,Valentina,Harith,Ruby,0
+MPLID_S14_GRP_W2_D2_M2_G2,RRQ,Terizla,Nolan,Luo Yi,Roger,Ruby,Fnatic Onic,Arlott,Julian,Zhask,Claude,Edith,1
+MPLID_S14_GRP_W2_D2_M3_G1,Geek Fam ID,Terizla,Ling,Luo Yi,Harith,Ruby,EVOS Glory,Edith,Fanny,Aurora,Roger,Khufra,1
+MPLID_S14_GRP_W2_D2_M3_G2,EVOS Glory,Barats,Alpha,Zhask,Harith,Tigreal,Geek Fam ID,Terizla,Nolan,Vexana,Natan,Ruby,1
+MPLID_S14_GRP_W2_D2_M3_G3,EVOS Glory,Terizla,Nolan,Zhask,Karrie,Franco,Geek Fam ID,Hylos,Roger,Vexana,Harith,Ruby,0
+MPLID_S14_GRP_W2_D3_M1_G1,Dewa United Esport,Chou,Roger,Zhuxin,Natan,Khufra,Bigetron Alpha,Arlott,Hayabusa,Valentina,Bruno,Mathilda,0
+MPLID_S14_GRP_W2_D3_M1_G2,Bigetron Alpha,Yu Zhong,X.Borg,Valentina,Roger,Arlott,Dewa United Esport,Terizla,Alpha,Yve,Harith,Chou,1
+MPLID_S14_GRP_W2_D3_M2_G1,Fnatic Onic,Edith,Nolan,Faramis,Harith,Tigreal,Alter Ego,Benedetta,Alpha,Zhask,Karrie,Ruby,1
+MPLID_S14_GRP_W2_D3_M2_G2,Alter Ego,Ruby,Lancelot,Valentina,Roger,Chou,Fnatic Onic,Edith,Hayabusa,Aurora,Moskov,Minotaur,0
+MPLID_S14_GRP_W2_D3_M3_G1,Team Liquid ID,Edith,X.Borg,Zhask,Roger,Mathilda,RBL,Terizla,Alpha,Yve,Moskov,Grock,1
+MPLID_S14_GRP_W2_D3_M3_G2,RBL,Gloo,Hayabusa,Lunox,Roger,Khufra,Team Liquid ID,Terizla,Joy,Valentina,Karrie,Edith,0
+MPLID_S14_GRP_W3_D1_M1_G1,Fnatic Onic,Terizla,Ling,Vexana,Bruno,Hylos,Geek Fam ID,Chou,Roger,Valentina,Moskov,Natalia,0
+MPLID_S14_GRP_W3_D1_M1_G2,Geek Fam ID,Edith,Ling,Valentina,Lunox,Kaja,Fnatic Onic,Arlott,Roger,Aurora,Harith,Ruby,0
+MPLID_S14_GRP_W3_D1_M1_G3,Fnatic Onic,Edith,Ling,Valentina,Clint,Grock,Geek Fam ID,Thamuz,Roger,Zhask,Moskov,Ruby,0
+MPLID_S14_GRP_W3_D1_M2_G1,Dewa United Esport,Edith,Fanny,Valentina,Claude,Jawhead,RBL,Ruby,Hayabusa,Nana,Moskov,Khufra,1
+MPLID_S14_GRP_W3_D1_M2_G2,RBL,Arlott,Joy,Zhuxin,Roger,Kaja,Dewa United Esport,Edith,X.Borg,Aurora,Moskov,Mathilda,0
+MPLID_S14_GRP_W3_D2_M1_G1,Geek Fam ID,Edith,Roger,Zhask,Lunox,Terizla,Bigetron Alpha,Arlott,Hayabusa,Aurora,Harith,Jawhead,1
+MPLID_S14_GRP_W3_D2_M1_G2,Bigetron Alpha,Edith,Ling,Faramis,Beatrix,Jawhead,Geek Fam ID,Thamuz,Nolan,Zhask,Moskov,Ruby,1
+MPLID_S14_GRP_W3_D2_M1_G3,Geek Fam ID,Edith,Roger,Faramis,Lunox,Terizla,Bigetron Alpha,Barats,Hayabusa,Zhask,Harith,Jawhead,1
+MPLID_S14_GRP_W3_D2_M2_G1,EVOS Glory,Hylos,Julian,Zhask,Moskov,Jawhead,Alter Ego,Edith,Nolan,Aurora,Roger,Chou,1
+MPLID_S14_GRP_W3_D2_M2_G2,Alter Ego,Phoveus,Hayabusa,Aurora,Roger,Jawhead,EVOS Glory,Edith,Bane,Valentina,Harith,Mathilda,1
+MPLID_S14_GRP_W3_D2_M2_G3,EVOS Glory,Terizla,Bane,Zhuxin,Moskov,Akai,Alter Ego,Edith,Roger,Faramis,Harith,Jawhead,1
+MPLID_S14_GRP_W3_D2_M3_G1,Dewa United Esport,Terizla,Ling,Aurora,Roger,Ruby,Team Liquid ID,Phoveus,Nolan,Yve,Harith,Hylos,0
+MPLID_S14_GRP_W3_D2_M3_G2,Dewa United Esport,Arlott,Ling,Aurora,Roger,Jawhead,Team Liquid ID,Edith,Nolan,Faramis,Harith,Chou,0
+MPLID_S14_GRP_W3_D3_M1_G1,RBL,Edith,Joy,Zhask,Moskov,Grock,Alter Ego,Hylos,Nolan,Aurora,Roger,Chou,0
+MPLID_S14_GRP_W3_D3_M1_G2,RBL,Edith,Julian,Zhask,Moskov,Jawhead,Alter Ego,Ruby,Roger,Aurora,Claude,Chou,1
+MPLID_S14_GRP_W3_D3_M1_G3,Alter Ego,Hylos,Nolan,Luo Yi,Roger,Tigreal,RBL,Terizla,Julian,Valentina,Moskov,Jawhead,1
+MPLID_S14_GRP_W3_D3_M2_G1,Team Liquid ID,Terizla,Nolan,Zhask,Karrie,Jawhead,RRQ,Arlott,Lancelot,Zhuxin,Harith,Hylos,0
+MPLID_S14_GRP_W3_D3_M2_G2,Team Liquid ID,Terizla,Joy,Zhask,Moskov,Edith,RRQ,Barats,Nolan,Aurora,Natan,Hylos,0
+MPLID_S14_GRP_W3_D3_M3_G1,Bigetron Alpha,Edith,Fanny,Valentina,Moskov,Grock,EVOS Glory,Phoveus,Julian,Vexana,Brody,Jawhead,0
+MPLID_S14_GRP_W3_D3_M3_G2,Bigetron Alpha,Arlott,Ling,Zhask,Harith,Lolita,EVOS Glory,Phoveus,Julian,Valentina,Roger,Franco,1
+MPLID_S14_GRP_W3_D3_M3_G3,Bigetron Alpha,Arlott,Alpha,Lunox,Roger,Mathilda,EVOS Glory,Phoveus,Bane,Valentina,Moskov,Akai,1
+MPLID_S14_GRP_W4_D1_M1_G1,Fnatic Onic,Terizla,Hayabusa,Lylia,Moskov,Hylos,Dewa United Esport,Edith,Julian,Zhask,Karrie,Chou,1
+MPLID_S14_GRP_W4_D1_M1_G2,Fnatic Onic,Edith,Nolan,Kadita,Harith,Chou,Dewa United Esport,Hylos,Hayabusa,Valentina,Lunox,Tigreal,0
+MPLID_S14_GRP_W4_D1_M1_G3,Fnatic Onic,Grock,Nolan,Faramis,Harith,Tigreal,Dewa United Esport,Arlott,Hayabusa,Lylia,Lunox,Edith,1
+MPLID_S14_GRP_W4_D1_M2_G1,Bigetron Alpha,Arlott,Alpha,Zhask,Moskov,Khufra,RBL,Ruby,Fanny,Valentina,Roger,Tigreal,1
+MPLID_S14_GRP_W4_D1_M2_G2,RBL,Phoveus,Benedetta,Zhask,Lunox,Jawhead,Bigetron Alpha,Yu Zhong,Alpha,Lylia,Harith,Arlott,1
+MPLID_S14_GRP_W4_D1_M2_G3,Bigetron Alpha,Ruby,Roger,Zhask,Beatrix,Kaja,RBL,Terizla,Benedetta,Aurora,Harith,Jawhead,1
+MPLID_S14_GRP_W4_D2_M1_G1,Geek Fam ID,Hylos,Julian,Vexana,Moskov,Gatotkaca,Team Liquid ID,Terizla,Nolan,Zhask,Harith,Jawhead,1
+MPLID_S14_GRP_W4_D2_M1_G2,Geek Fam ID,Hylos,Julian,Vexana,Claude,Gatotkaca,Team Liquid ID,Terizla,Nolan,Faramis,Harith,Carmilla,0
+MPLID_S14_GRP_W4_D2_M1_G3,Team Liquid ID,Hylos,Nolan,Zhuxin,Natan,Carmilla,Geek Fam ID,Phoveus,Julian,Valentina,Moskov,Lolita,1
+MPLID_S14_GRP_W4_D2_M2_G1,Bigetron Alpha,Ruby,Ling,Valentina,Beatrix,Edith,Fnatic Onic,Barats,Fanny,Faramis,Harith,Grock,0
+MPLID_S14_GRP_W4_D2_M2_G2,Fnatic Onic,Terizla,Fanny,Faramis,Brody,Jawhead,Bigetron Alpha,Arlott,Ling,Zhask,Clint,Ruby,0
+MPLID_S14_GRP_W4_D2_M2_G3,Bigetron Alpha,Ruby,Ling,Luo Yi,Moskov,Jawhead,Fnatic Onic,Arlott,Fanny,Faramis,Roger,Hylos,0
+MPLID_S14_GRP_W4_D2_M3_G1,Alter Ego,Phoveus,Hayabusa,Zhask,Claude,Minotaur,RRQ,Edith,Alpha,Faramis,Harith,Ruby,0
+MPLID_S14_GRP_W4_D2_M3_G2,Alter Ego,Phoveus,Nolan,Luo Yi,Lunox,Hylos,RRQ,Arlott,Hayabusa,Zhask,Clint,Ruby,1
+MPLID_S14_GRP_W4_D2_M3_G3,Alter Ego,Hylos,Nolan,Zhask,Hanabi,Lolita,RRQ,Edith,Julian,Aurora,Beatrix,Franco,0
+MPLID_S14_GRP_W4_D3_M1_G1,RBL,Phoveus,Benedetta,Zhask,Roger,Edith,EVOS Glory,Arlott,Julian,Vexana,Moskov,Jawhead,1
+MPLID_S14_GRP_W4_D3_M1_G2,EVOS Glory,Arlott,Julian,Zhuxin,Moskov,Jawhead,RBL,Phoveus,Benedetta,Yve,Roger,Edith,0
+MPLID_S14_GRP_W4_D3_M2_G1,Geek Fam ID,Hylos,Ling,Vexana,Karrie,Gatotkaca,RRQ,Phoveus,Alpha,Aurora,Bruno,Edith,0
+MPLID_S14_GRP_W4_D3_M2_G2,RRQ,Minsitthar,Julian,Valentina,Claude,Hylos,Geek Fam ID,Phoveus,Nolan,Vexana,Moskov,Terizla,0
+MPLID_S14_GRP_W4_D3_M2_G3,RRQ,Phoveus,Ling,Valentina,Beatrix,Grock,Geek Fam ID,Edith,Nolan,Vexana,Bruno,Gatotkaca,1
+MPLID_S14_GRP_W4_D3_M3_G1,Alter Ego,Arlott,Fanny,Luo Yi,Harith,Jawhead,Dewa United Esport,Barats,Julian,Valentina,Moskov,Ruby,1
+MPLID_S14_GRP_W4_D3_M3_G2,Alter Ego,Phoveus,Lancelot,Zhask,Roger,Chou,Dewa United Esport,Terizla,Hayabusa,Valentina,Harith,Jawhead,1
+MPLID_S14_GRP_W5_D1_M1_G1,Geek Fam ID,Phoveus,Alpha,Faramis,Moskov,Ruby,RBL,Edith,Julian,Zhask,Karrie,Akai,1
+MPLID_S14_GRP_W5_D1_M1_G2,RBL,Arlott,Hayabusa,Zhask,Karrie,Akai,Geek Fam ID,Edith,Julian,Aurora,Moskov,Grock,0
+MPLID_S14_GRP_W5_D1_M2_G1,EVOS Glory,Phoveus,Nolan,Valentina,Claude,Tigreal,Fnatic Onic,Terizla,Julian,Vexana,Karrie,Hylos,0
+MPLID_S14_GRP_W5_D1_M2_G2,EVOS Glory,Phoveus,Nolan,Angela,Lunox,Tigreal,Fnatic Onic,Terizla,Roger,Valentina,Ruby,Jawhead,0
+MPLID_S14_GRP_W5_D2_M1_G1,Dewa United Esport,Phoveus,Hayabusa,Vexana,Lunox,Gatotkaca,RRQ,Hylos,Alpha,Angela,Harith,Tigreal,1
+MPLID_S14_GRP_W5_D2_M1_G2,RRQ,Edith,Julian,Zhuxin,Karrie,Franco,Dewa United Esport,Arlott,Ling,Aurora,Lunox,Chou,1
+MPLID_S14_GRP_W5_D2_M1_G3,Dewa United Esport,Phoveus,Julian,Aurora,Moskov,Gatotkaca,RRQ,Yu Zhong,Fredrinn,Vexana,Natan,Edith,0
+MPLID_S14_GRP_W5_D2_M2_G1,Alter Ego,Phoveus,Lancelot,Zhask,Roger,Grock,Team Liquid ID,Hylos,Alpha,Vexana,Natan,Lolita,0
+MPLID_S14_GRP_W5_D2_M2_G2,Team Liquid ID,Terizla,Fanny,Aurora,Harith,Chou,Alter Ego,Edith,Ling,Vexana,Moskov,Tigreal,1
+MPLID_S14_GRP_W5_D2_M3_G1,Bigetron Alpha,Phoveus,Bane,Zhask,Roger,Tigreal,EVOS Glory,Terizla,Nolan,Faramis,Lunox,Franco,1
+MPLID_S14_GRP_W5_D2_M3_G2,Bigetron Alpha,Phoveus,Nolan,Lunox,Harith,Ruby,EVOS Glory,Terizla,Roger,Zhask,Natan,Tigreal,1
+MPLID_S14_GRP_W5_D3_M1_G1,Alter Ego,Phoveus,Ling,Vexana,Moskov,Tigreal,RBL,Edith,Alpha,Yve,Roger,Akai,1
+MPLID_S14_GRP_W5_D3_M1_G2,RBL,Arlott,Julian,Zhask,Moskov,Edith,Alter Ego,Terizla,Ling,Aurora,Karrie,Jawhead,0
+MPLID_S14_GRP_W5_D3_M2_G1,Geek Fam ID,Phoveus,Nolan,Vexana,Moskov,Grock,Fnatic Onic,Hylos,Julian,Zhask,Brody,Lolita,1
+MPLID_S14_GRP_W5_D3_M2_G2,Geek Fam ID,Phoveus,Nolan,Yve,Moskov,Mathilda,Fnatic Onic,Hylos,Julian,Vexana,Karrie,Chou,1
+MPLID_S14_GRP_W5_D3_M3_G1,Dewa United Esport,Phoveus,Julian,Lylia,Moskov,Edith,Team Liquid ID,Terizla,Alpha,Vexana,Natan,Carmilla,0
+MPLID_S14_GRP_W5_D3_M3_G2,Team Liquid ID,Terizla,Ling,Aurora,Harith,Angela,Dewa United Esport,Arlott,Alpha,Vexana,Lunox,Gatotkaca,0
+MPLID_S14_GRP_W5_D3_M3_G3,Dewa United Esport,Edith,Alpha,Vexana,Karrie,Gatotkaca,Team Liquid ID,Hylos,Nolan,Yve,Harith,Lolita,0
+MPLID_S14_GRP_W6_D1_M1_G1,Bigetron Alpha,Phoveus,Nolan,Yve,Lunox,Grock,Dewa United Esport,Edith,Alpha,Zhuxin,Harith,Terizla,1
+MPLID_S14_GRP_W6_D1_M1_G2,Bigetron Alpha,Phoveus,Nolan,Zhask,Lunox,Khufra,Dewa United Esport,Terizla,Alpha,Valentina,Harith,Carmilla,0
+MPLID_S14_GRP_W6_D1_M1_G3,Bigetron Alpha,Phoveus,Hayabusa,Zhask,Roger,Mathilda,Dewa United Esport,Terizla,Julian,Vexana,Moskov,Gatotkaca,1
+MPLID_S14_GRP_W6_D1_M2_G1,RBL,Edith,Hayabusa,Zhuxin,Karrie,Kaja,Team Liquid ID,Phoveus,Roger,Vexana,Ruby,Hylos,0
+MPLID_S14_GRP_W6_D1_M2_G2,RBL,Edith,Hayabusa,Yve,Karrie,Carmilla,Team Liquid ID,Phoveus,Julian,Vexana,Roger,Hylos,1
+MPLID_S14_GRP_W6_D1_M2_G3,RBL,Edith,Alpha,Novaria,Karrie,Mathilda,Team Liquid ID,Arlott,Roger,Yve,Ruby,Hylos,0
+MPLID_S14_GRP_W6_D2_M1_G1,EVOS Glory,Chou,Fanny,Zhask,Lunox,Edith,Dewa United Esport,Arlott,Hayabusa,Valentina,Harith,Gatotkaca,0
+MPLID_S14_GRP_W6_D2_M1_G2,Dewa United Esport,Terizla,Alpha,Valentina,Moskov,Mathilda,EVOS Glory,Ruby,Nolan,Lunox,Roger,Tigreal,1
+MPLID_S14_GRP_W6_D2_M2_G1,Alter Ego,Edith,Julian,Vexana,Karrie,Chip,Geek Fam ID,Phoveus,Nolan,Luo Yi,Moskov,Grock,1
+MPLID_S14_GRP_W6_D2_M2_G2,Geek Fam ID,Phoveus,Nolan,Yve,Moskov,Terizla,Alter Ego,Hylos,Julian,Vexana,Hanabi,Lolita,1
+MPLID_S14_GRP_W6_D2_M2_G3,Alter Ego,Edith,Bane,Vexana,Harith,Chip,Geek Fam ID,Phoveus,Nolan,Faramis,Lunox,Ruby,0
+MPLID_S14_GRP_W6_D2_M3_G1,RRQ,Edith,Ling,Valentina,Harith,Ruby,Fnatic Onic,Chou,Roger,Vexana,Lunox,Gatotkaca,1
+MPLID_S14_GRP_W6_D2_M3_G2,Fnatic Onic,Chou,Nolan,Zhuxin,Karrie,Arlott,RRQ,Edith,Roger,Yve,Ixia,Mathilda,0
+MPLID_S14_GRP_W6_D3_M1_G1,Alter Ego,Edith,Ling,Luo Yi,Clint,Khufra,EVOS Glory,Arlott,Fanny,Valentina,Moskov,Lolita,1
+MPLID_S14_GRP_W6_D3_M1_G2,Alter Ego,Terizla,Fanny,Aurora,Moskov,Jawhead,EVOS Glory,Edith,Roger,Valentina,Ruby,Mathilda,1
+MPLID_S14_GRP_W6_D3_M2_G1,Team Liquid ID,Arlott,Nolan,Vexana,Harith,Hylos,Fnatic Onic,Edith,Roger,Valentina,Lunox,Kaja,1
+MPLID_S14_GRP_W6_D3_M2_G2,Team Liquid ID,Hylos,Alpha,Angela,Harith,Chou,Fnatic Onic,Terizla,Ling,Valentina,Roger,Mathilda,1
+MPLID_S14_GRP_W6_D3_M3_G1,Bigetron Alpha,Phoveus,Nolan,Faramis,Roger,Mathilda,RRQ,Terizla,Fanny,Vexana,Melissa,Ruby,1
+MPLID_S14_GRP_W6_D3_M3_G2,Bigetron Alpha,Masha,Hayabusa,Zhask,Ruby,Grock,RRQ,Uranus,Roger,Aurora,Harith,Gatotkaca,0
+MPLID_S14_GRP_W6_D3_M3_G3,Bigetron Alpha,Ruby,Fanny,Lunox,Roger,Khufra,RRQ,Arlott,Bane,Valentina,Harith,Gatotkaca,0
+MPLID_S14_GRP_W7_D1_M1_G1,Geek Fam ID,Edith,Nolan,Faramis,Lunox,Ruby,Dewa United Esport,Arlott,Alpha,Vexana,Harith,Hylos,1
+MPLID_S14_GRP_W7_D1_M1_G2,Dewa United Esport,Edith,Alpha,Valentina,Harith,Carmilla,Geek Fam ID,Terizla,Julian,Yve,Claude,Ruby,0
+MPLID_S14_GRP_W7_D1_M2_G1,Team Liquid ID,Arlott,Nolan,Aurora,Alice,Hylos,Bigetron Alpha,Chou,Ling,Vexana,Harith,Gatotkaca,1
+MPLID_S14_GRP_W7_D1_M2_G2,Bigetron Alpha,Ruby,Nolan,Valentina,Natan,Tigreal,Team Liquid ID,Hylos,Ling,Yve,Alice,Chou,0
+MPLID_S14_GRP_W7_D2_M1_G1,Alter Ego,Terizla,Ling,Valentina,Roger,Hylos,Dewa United Esport,Gloo,Hayabusa,Yve,Claude,Gatotkaca,0
+MPLID_S14_GRP_W7_D2_M1_G2,Alter Ego,Edith,Ling,Valentina,Karrie,Kaja,Dewa United Esport,Arlott,Hayabusa,Yve,Claude,Mathilda,0
+MPLID_S14_GRP_W7_D2_M2_G1,RRQ,Khaleed,Roger,Yve,Cecilion,Mathilda,EVOS Glory,Arlott,Ling,Valentina,Claude,Angela,1
+MPLID_S14_GRP_W7_D2_M2_G2,EVOS Glory,Edith,Ling,Faramis,Beatrix,Kaja,RRQ,Arlott,Nolan,Aurora,Alice,Gatotkaca,1
+MPLID_S14_GRP_W7_D2_M2_G3,EVOS Glory,Edith,Nolan,Luo Yi,Harith,Akai,RRQ,Gatotkaca,Joy,Faramis,Moskov,Ruby,1
+MPLID_S14_GRP_W7_D2_M3_G1,RBL,Edith,Alpha,Zhask,Claude,Kaja,Fnatic Onic,Ruby,Joy,Yve,Bruno,Mathilda,1
+MPLID_S14_GRP_W7_D2_M3_G2,RBL,Gatotkaca,Hayabusa,Zhask,Lunox,Akai,Fnatic Onic,Phoveus,Joy,Faramis,Claude,Ruby,1
+MPLID_S14_GRP_W7_D3_M1_G1,RRQ,Phoveus,Bane,Yve,Claude,Mathilda,Geek Fam ID,Thamuz,Julian,Valentina,Moskov,Chip,1
+MPLID_S14_GRP_W7_D3_M1_G2,Geek Fam ID,Edith,Nolan,Faramis,Alice,Ruby,RRQ,Arlott,Roger,Valentina,Natan,Grock,0
+MPLID_S14_GRP_W7_D3_M2_G1,RBL,Edith,Alpha,Zhask,Lunox,Khufra,Bigetron Alpha,Khaleed,X.Borg,Yve,Harith,Gatotkaca,0
+MPLID_S14_GRP_W7_D3_M2_G2,RBL,Edith,Alpha,Yve,Claude,Akai,Bigetron Alpha,Khaleed,X.Borg,Luo Yi,Harith,Gatotkaca,0
+MPLID_S14_GRP_W7_D3_M3_G1,Team Liquid ID,Hylos,Ling,Aurora,Ruby,Angela,EVOS Glory,Gloo,Nolan,Yve,Harith,Mathilda,1
+MPLID_S14_GRP_W7_D3_M3_G2,EVOS Glory,Terizla,Ling,Faramis,Beatrix,Kaja,Team Liquid ID,Arlott,Nolan,Valentina,Harith,Lolita,1
+MPLID_S14_GRP_W7_D3_M3_G3,Team Liquid ID,Ruby,Hayabusa,Vexana,Harith,Hylos,EVOS Glory,Terizla,Nolan,Faramis,Lunox,Tigreal,1
+MPLID_S14_GRP_W8_D1_M1_G1,Geek Fam ID,Phoveus,Roger,Yve,Clint,Ruby,Team Liquid ID,Gatotkaca,Alpha,Aurora,Harith,Mathilda,0
+MPLID_S14_GRP_W8_D1_M1_G2,Team Liquid ID,Akai,Hayabusa,Lylia,Harith,Hylos,Geek Fam ID,Phoveus,Bane,Yve,Lunox,Gatotkaca,1
+MPLID_S14_GRP_W8_D1_M2_G1,RRQ,Khaleed,Julian,Faramis,Claude,Mathilda,Dewa United Esport,Hylos,Ling,Vexana,Beatrix,Ruby,1
+MPLID_S14_GRP_W8_D1_M2_G2,Dewa United Esport,X.Borg,Fanny,Yve,Beatrix,Gatotkaca,RRQ,Khaleed,Bane,Vexana,Natan,Ruby,0
+MPLID_S14_GRP_W8_D2_M1_G1,EVOS Glory,Yu Zhong,Julian,Aurora,Claude,Mathilda,RBL,Phoveus,Alpha,Vexana,Moskov,Kaja,0
+MPLID_S14_GRP_W8_D2_M1_G2,EVOS Glory,Edith,Lancelot,Faramis,Karrie,Kaja,RBL,Gatotkaca,Nolan,Valentina,Natan,Akai,1
+MPLID_S14_GRP_W8_D2_M1_G3,EVOS Glory,Khaleed,Nolan,Valentina,Natan,Atlas,RBL,Edith,Julian,Zhask,Roger,Kaja,1
+MPLID_S14_GRP_W8_D2_M2_G1,RRQ,Arlott,Ling,Vexana,Claude,Ruby,Alter Ego,Khaleed,Joy,Faramis,Bruno,Gatotkaca,0
+MPLID_S14_GRP_W8_D2_M2_G2,Alter Ego,Barats,Ling,Yve,Lunox,Gatotkaca,RRQ,Arlott,Hayabusa,Valentina,Harith,Grock,1
+MPLID_S14_GRP_W8_D2_M3_G1,Fnatic Onic,Khaleed,Hayabusa,Valentina,Wanwan,Franco,Bigetron Alpha,Arlott,Alice,Angela,Beatrix,Gatotkaca,0
+MPLID_S14_GRP_W8_D2_M3_G2,Fnatic Onic,Khaleed,Hayabusa,Valentina,Wanwan,Franco,Bigetron Alpha,Terizla,Alice,Angela,Beatrix,Gatotkaca,1
+MPLID_S14_GRP_W8_D2_M3_G3,Fnatic Onic,Khaleed,Hayabusa,Valentina,Wanwan,Tigreal,Bigetron Alpha,Arlott,Alice,Angela,Moskov,Grock,1
+MPLID_S14_GRP_W8_D3_M1_G1,Team Liquid ID,Barats,Ling,Aurora,Ruby,Jawhead,Alter Ego,Arlott,Nolan,Valentina,Claude,Gatotkaca,0
+MPLID_S14_GRP_W8_D3_M1_G2,Alter Ego,Phoveus,Nolan,Lylia,Harith,Tigreal,Team Liquid ID,Gatotkaca,Alpha,Yve,Alice,Angela,0
+MPLID_S14_GRP_W8_D3_M1_G3,Team Liquid ID,Gatotkaca,Alpha,Yve,Harith,Chou,Alter Ego,Hylos,Hayabusa,Vexana,Lunox,Chip,1
+MPLID_S14_GRP_W8_D3_M2_G1,Fnatic Onic,Khaleed,Lancelot,Valentina,Wanwan,Gatotkaca,EVOS Glory,Edith,Nolan,Faramis,Moskov,Akai,1
+MPLID_S14_GRP_W8_D3_M2_G2,EVOS Glory,Gatotkaca,Nolan,Faramis,Natan,Hylos,Fnatic Onic,Edith,Lancelot,Valentina,Beatrix,Franco,0
+MPLID_S14_GRP_W8_D3_M3_G1,Geek Fam ID,Khaleed,Julian,Aurora,Claude,Gatotkaca,RBL,Edith,Alpha,Benedetta,Alice,Mathilda,1
+MPLID_S14_GRP_W8_D3_M3_G2,Geek Fam ID,Khaleed,Roger,Aurora,Alice,Hylos,RBL,Gatotkaca,Alpha,Zhask,Claude,Mathilda,0
+MPLID_S14_GRP_W8_D3_M3_G3,RBL,Khaleed,Alpha,Valentina,Claude,Kaja,Geek Fam ID,Edith,Bane,Faramis,Moskov,Mathilda,0
+MPLID_S14_GRP_W9_D1_M1_G1,Geek Fam ID,Arlott,Fanny,Zhuxin,Moskov,Gatotkaca,Bigetron Alpha,Khaleed,Alpha,Faramis,Wanwan,Mathilda,0
+MPLID_S14_GRP_W9_D1_M1_G2,Geek Fam ID,Edith,Fanny,Valentina,Claude,Khaleed,Bigetron Alpha,Hylos,Ling,Faramis,Wanwan,Tigreal,0
+MPLID_S14_GRP_W9_D1_M2_G1,Dewa United Esport,Terizla,Alpha,Vexana,Claude,Gatotkaca,RBL,Phoveus,Nolan,Yve,Natan,Minotaur,0
+MPLID_S14_GRP_W9_D1_M2_G2,RBL,Phoveus,Nolan,Vexana,Natan,Kaja,Dewa United Esport,Khaleed,Alpha,Faramis,Moskov,Mathilda,0
+MPLID_S14_GRP_W9_D1_M2_G3,RBL,Phoveus,Nolan,Zhask,Karrie,Minotaur,Dewa United Esport,Hylos,Alpha,Valentina,Wanwan,Mathilda,1
+MPLID_S14_GRP_W9_D2_M1_G1,EVOS Glory,Khaleed,Hayabusa,Vexana,Alice,Edith,Geek Fam ID,Thamuz,Alpha,Valentina,Natan,Mathilda,0
+MPLID_S14_GRP_W9_D2_M1_G2,EVOS Glory,Khaleed,Julian,Vexana,Harith,Tigreal,Geek Fam ID,Terizla,Alpha,Valentina,Wanwan,Helcurt,1
+MPLID_S14_GRP_W9_D2_M1_G3,EVOS Glory,Phoveus,Fanny,Vexana,Claude,Tigreal,Geek Fam ID,Edith,Nolan,Aurora,Natan,Hylos,0
+MPLID_S14_GRP_W9_D2_M2_G1,Team Liquid ID,Hylos,Ling,Angela,Harith,Chou,RRQ,Phoveus,Roger,Faramis,Bruno,Gatotkaca,1
+MPLID_S14_GRP_W9_D2_M2_G2,RRQ,Phoveus,Alpha,Yve,Irithel,Chip,Team Liquid ID,Gatotkaca,Joy,Luo Yi,Wanwan,Chou,1
+MPLID_S14_GRP_W9_D2_M2_G3,Team Liquid ID,Gatotkaca,Ling,Yve,Ruby,Angela,RRQ,Hylos,Bane,Faramis,Natan,Franco,0
+MPLID_S14_GRP_W9_D2_M3_G1,Alter Ego,Terizla,Ling,Valentina,Ruby,Khufra,Fnatic Onic,Barats,Hayabusa,Luo Yi,Beatrix,Edith,0
+MPLID_S14_GRP_W9_D2_M3_G2,Alter Ego,Chou,Ling,Yve,Bruno,Angela,Fnatic Onic,Edith,Hayabusa,Faramis,Beatrix,Kaja,0
+MPLID_S14_GRP_W9_D3_M1_G1,Dewa United Esport,Khaleed,Julian,Yve,Moskov,Jawhead,Fnatic Onic,Gatotkaca,Alpha,Lylia,Wanwan,Angela,0
+MPLID_S14_GRP_W9_D3_M1_G2,Fnatic Onic,Phoveus,Martis,Faramis,Moskov,Franco,Dewa United Esport,Hylos,Ling,Zhuxin,Harith,Angela,0
+MPLID_S14_GRP_W9_D3_M1_G3,Fnatic Onic,Barats,Ling,Luo Yi,Harith,Edith,Dewa United Esport,Khaleed,Joy,Faramis,Moskov,Angela,1
+MPLID_S14_GRP_W9_D3_M2_G1,Bigetron Alpha,Akai,Alpha,Valentina,Brody,Mathilda,Alter Ego,Khaleed,Joy,Angela,Bruno,Chou,1
+MPLID_S14_GRP_W9_D3_M2_G2,Alter Ego,Barats,Fanny,Valentina,Claude,Jawhead,Bigetron Alpha,Hylos,Ling,Faramis,Wanwan,Ruby,0
+MPLID_S14_GRP_W9_D3_M3_G1,RRQ,Hylos,Hayabusa,Zhuxin,Wanwan,Mathilda,RBL,Khaleed,Lancelot,Zhask,Harith,Gatotkaca,1
+MPLID_S14_GRP_W9_D3_M3_G2,RBL,Gatotkaca,Nolan,Zhask,Claude,Akai,RRQ,Hylos,Lancelot,Angela,Wanwan,Chou,0
+MPLID_S14_PLY_IN_D1_M1_G1,Bigetron Alpha,Chou,Suyou,Valentina,Wanwan,Tigreal,Alter Ego,Arlott,Alpha,Yve,Moskov,Hylos,1
+MPLID_S14_PLY_IN_D1_M1_G2,Alter Ego,Phoveus,Alpha,Luo Yi,Moskov,Ruby,Bigetron Alpha,Hylos,Nolan,Valentina,Wanwan,Tigreal,0
+MPLID_S14_PLY_IN_D1_M1_G3,Alter Ego,Benedetta,Alpha,Zhuxin,Clint,Edith,Bigetron Alpha,Ruby,Nolan,Yve,Beatrix,Hylos,0
+MPLID_S14_PLY_IN_D1_M2_G1,Fnatic Onic,Hylos,Suyou,Luo Yi,Beatrix,Franco,Geek Fam ID,Phoveus,X.Borg,Yve,Moskov,Mathilda,1
+MPLID_S14_PLY_IN_D1_M2_G2,Geek Fam ID,Edith,Suyou,Faramis,Beatrix,Hylos,Fnatic Onic,Phoveus,Nolan,Luo Yi,Natan,Khaleed,1
+MPLID_S14_PLY_IN_D1_M2_G3,Fnatic Onic,Hylos,Suyou,Vexana,Beatrix,Franco,Geek Fam ID,Phoveus,Alpha,Yve,Natan,Tigreal,0
+MPLID_S14_PLY_IN_D1_M2_G4,Fnatic Onic,Chou,Suyou,Aurora,Beatrix,Tigreal,Geek Fam ID,Gatotkaca,Alpha,Yve,Moskov,Hylos,1
+MPLID_S14_PLY_IN_D1_M2_G5,Fnatic Onic,Khaleed,Suyou,Faramis,Beatrix,Chou,Geek Fam ID,Hylos,Nolan,Yve,Natan,Tigreal,0
+MPLID_S14_PLYOFF_UP_D1_M1_G1,Team Liquid ID,Hilda,Alpha,Zhuxin,Bruno,Mathilda,Bigetron Alpha,Hylos,Hayabusa,Valentina,Beatrix,Kaja,1
+MPLID_S14_PLYOFF_UP_D1_M1_G2,Bigetron Alpha,Hylos,Nolan,Valentina,Harith,Tigreal,Team Liquid ID,Phoveus,Alpha,Angela,Natan,Chou,0
+MPLID_S14_PLYOFF_UP_D1_M1_G3,Team Liquid ID,Gatotkaca,Nolan,Vexana,Harith,Mathilda,Bigetron Alpha,Khaleed,Alpha,Zhuxin,Claude,Tigreal,0
+MPLID_S14_PLYOFF_UP_D1_M1_G4,Team Liquid ID,Akai,Bane,Zhuxin,Natan,Chou,Bigetron Alpha,Phoveus,Alpha,Lunox,Clint,Mathilda,0
+MPLID_S14_PLYOFF_UP_D1_M1_G5,Bigetron Alpha,Akai,X.Borg,Faramis,Brody,Mathilda,Team Liquid ID,Phoveus,Ling,Aurora,Ruby,Angela,0
+MPLID_S14_PLYOFF_UP_D1_M2_G1,RRQ,Edith,Ling,Zhuxin,Natan,Franco,Geek Fam ID,Gatotkaca,Nolan,Yve,Beatrix,Chou,1
+MPLID_S14_PLYOFF_UP_D1_M2_G2,Geek Fam ID,Thamuz,Suyou,Faramis,Beatrix,Chou,RRQ,Khaleed,Nolan,Luo Yi,Natan,Edith,1
+MPLID_S14_PLYOFF_UP_D1_M2_G3,RRQ,Barats,Alpha,Faramis,Irithel,Mathilda,Geek Fam ID,Khaleed,Nolan,Valentina,Beatrix,Chou,1
+MPLID_S14_PLYOFF_UP_D1_M2_G4,RRQ,Barats,Alpha,Faramis,Irithel,Mathilda,Geek Fam ID,Edith,Nolan,Luo Yi,Beatrix,Chou,1
+MPLID_S14_PLYOFF_LOW_D1_M1_G1,Bigetron Alpha,Arlott,Suyou,Luo Yi,Natan,Gatotkaca,Geek Fam ID,Hylos,Joy,Zhuxin,Moskov,Tigreal,1
+MPLID_S14_PLYOFF_LOW_D1_M1_G2,Geek Fam ID,Edith,Alpha,Zhuxin,Clint,Hylos,Bigetron Alpha,Khaleed,Nolan,Yve,Moskov,Gatotkaca,0
+MPLID_S14_PLYOFF_LOW_D1_M1_G3,Geek Fam ID,Thamuz,Alpha,Faramis,Natan,Ruby,Bigetron Alpha,Khaleed,Julian,Yve,Clint,Gatotkaca,0
+MPLID_S14_UP_FNL_D1_M1_G1,RRQ,Edith,Alpha,Zhuxin,Wanwan,Franco,Team Liquid ID,Phoveus,Bane,Yve,Natan,Chou,0
+MPLID_S14_UP_FNL_D1_M1_G2,RRQ,Cici,Julian,Zhuxin,Irithel,Khaleed,Team Liquid ID,Hilda,Ling,Yve,Natan,Chou,0
+MPLID_S14_UP_FNL_D1_M1_G3,RRQ,Terizla,Suyou,Yve,Claude,Edith,Team Liquid ID,Phoveus,Nolan,Zhuxin,Harith,Grock,1
+MPLID_S14_UP_FNL_D1_M1_G4,Team Liquid ID,Phoveus,Ling,Angela,Harith,Hylos,RRQ,Barats,Alpha,Faramis,Bruno,Mathilda,0
+MPLID_S14_UP_FNL_D1_M1_G5,Team Liquid ID,Hylos,Bane,Aurora,Harith,Mathilda,RRQ,Phoveus,Hayabusa,Yve,Lunox,Khaleed,0
+MPLID_S14_LOW_FNL_D1_M1_G1,Team Liquid ID,Hylos,Bane,Yve,Ixia,Mathilda,Bigetron Alpha,Phoveus,Alpha,Valentina,Natan,Rafaela,1
+MPLID_S14_LOW_FNL_D1_M1_G2,Bigetron Alpha,Khaleed,Nolan,Zhuxin,Natan,Mathilda,Team Liquid ID,Hilda,Alpha,Yve,Harith,Rafaela,0
+MPLID_S14_LOW_FNL_D1_M1_G3,Team Liquid ID,Terizla,Bane,Lylia,Natan,Mathilda,Bigetron Alpha,Ruby,Alpha,Yve,Moskov,Lolita,1
+MPLID_S14_GRAND_FNL_D1_M1_G1,Team Liquid ID,Hilda,Alpha,Pharsa,Beatrix,Chip,RRQ,Terizla,Bane,Yve,Natan,Tigreal,1
+MPLID_S14_GRAND_FNL_D1_M1_G2,RRQ,Phoveus,Bane,Zhuxin,Irithel,Mathilda,Team Liquid ID,Hylos,Alpha,Yve,Natan,Rafaela,1
+MPLID_S14_GRAND_FNL_D1_M1_G3,Team Liquid ID,Benedetta,Alpha,Yve,Natan,Chip,RRQ,Hilda,Bane,Zhuxin,Irithel,Gatotkaca,0
+MPLID_S14_GRAND_FNL_D1_M1_G4,Team Liquid ID,Hylos,Suyou,Zhuxin,Beatrix,Khaleed,RRQ,Hilda,Bane,Aurora,Natan,Mathilda,1
+MPLID_S14_GRAND_FNL_D1_M1_G5,RRQ,Phoveus,Bane,Zhuxin,Beatrix,Jawhead,Team Liquid ID,Khaleed,Alpha,Yve,Natan,Tigreal,1
+MPLID_S14_GRAND_FNL_D1_M1_G6,Team Liquid ID,Phoveus,Ling,Angela,Lunox,Khaleed,RRQ,Barats,Julian,Faramis,Irithel,Mathilda,1
+MPLID_S14_GRAND_FNL_D1_M1_G7,RRQ,Barats,Alpha,Faramis,Ixia,Mathilda,Team Liquid ID,Terizla,Ling,Angela,Harith,Chou,0
