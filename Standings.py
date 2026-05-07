@@ -29,38 +29,37 @@ def get_image_base64(img_path):
         return f"data:image/png;base64,{encoded_string}"
 
 def load_data():
+    if not os.path.exists("Match.csv"):
+        return pd.DataFrame(columns=['Week', 'Home Team', 'Score Home', 'Score Away', 'Away team'])
     df = pd.read_csv("Match.csv", sep=";")
     replacements = {"Bigetron By Vitality": "Bigetron by Vitality"}
     df['Home Team'] = df['Home Team'].str.strip().replace(replacements)
     df['Away team'] = df['Away team'].str.strip().replace(replacements)
     return df
 
+# --- PROSES DATA KLASEMEN ---
 df_main = load_data()
-
-st.markdown("<h1 style='text-align: center;'>🏆 MPL INDONESIA STANDINGS</h1>", unsafe_allow_html=True)
-st.markdown("---")
-
 df_played = df_main.dropna(subset=['Score Home', 'Score Away'])
+
 teams = {}
-def get_or_create_team(team_name):
-    if team_name not in teams:
-        teams[team_name] = {"Team": team_name, "Match Win": 0, "Match Lose": 0, "Game Win": 0, "Game Lose": 0, "Match Point": 0}
-    return teams[team_name]
+def get_or_create_team(name):
+    if name not in teams:
+        teams[name] = {"Team": name, "Match Win": 0, "Match Lose": 0, "Game Win": 0, "Game Lose": 0, "Match Point": 0}
+    return teams[name]
 
 for _, row in df_played.iterrows():
     t_a, t_b = get_or_create_team(row['Home Team']), get_or_create_team(row['Away team'])
-    score_a, score_b = int(row['Score Home']), int(row['Score Away'])
-    
-    t_a["Game Win"] += score_a; t_a["Game Lose"] += score_b
-    t_b["Game Win"] += score_b; t_b["Game Lose"] += score_a
-    
-    if score_a > score_b:
+    s_a, s_b = int(row['Score Home']), int(row['Score Away'])
+    t_a["Game Win"] += s_a; t_a["Game Lose"] += s_b
+    t_b["Game Win"] += s_b; t_b["Game Lose"] += s_a
+    if s_a > s_b:
         t_a["Match Win"] += 1; t_b["Match Lose"] += 1; t_a["Match Point"] += 1
-    elif score_b > score_a:
+    elif s_b > s_a:
         t_b["Match Win"] += 1; t_a["Match Lose"] += 1; t_b["Match Point"] += 1
 
+# Menghasilkan DataFrame Klasemen
 if not teams:
-    st.info("Belum ada pertandingan yang diselesaikan.")
+    df_standings = pd.DataFrame()
 else:
     standings = pd.DataFrame(list(teams.values()))
     standings["Match W-L"] = standings["Match Win"].astype(str) + " - " + standings["Match Lose"].astype(str)
@@ -68,27 +67,81 @@ else:
     standings["Game W-L"] = standings["Game Win"].astype(str) + " - " + standings["Game Lose"].astype(str)
     standings = standings.sort_values(by=["Match Point", "Net Game Win"], ascending=[False, False]).reset_index(drop=True)
     standings.index = standings.index + 1
-    
-    # Menambahkan kolom Logo lokal yang sudah di-convert
-    standings["Logo"] = standings["Team"].map(LOGO_MAP).apply(get_image_base64)
-    
-    # Susun kolom, Logo di paling depan
-    df_standings = standings[["Logo", "Team", "Match Point", "Match W-L", "Net Game Win", "Game W-L"]]
+    df_standings = standings
 
-    def highlight_standings(row):
-        if row.name <= 2: return ['background-color: rgba(173, 216, 230, 0.2)'] * len(row)
-        elif row.name >= 7: return ['background-color: rgba(240, 128, 128, 0.2)'] * len(row)
-        else: return [''] * len(row)
+# ==========================================
+# UI UTAMA DENGAN TABS
+# ==========================================
+st.markdown("<h1 style='text-align: center;'>🏆 MPL ID SEASON ANALYTICS</h1>", unsafe_allow_html=True)
 
-    styled_standings = df_standings.style.apply(highlight_standings, axis=1).format({"Net Game Win": "{:+d}"})
+tab_standings, tab_playoff = st.tabs(["📊 Regular Season Standings", "🔥 Playoff Bracket"])
 
-    # Tampilkan tabel dengan image column
-    st.dataframe(
-        styled_standings, 
-        use_container_width=True, 
-        height=400,
-        column_config={
-            "Logo": st.column_config.ImageColumn("Logo", width="small") # width="small" memastikan ukuran semua logo rata
-        }
-    )
-    st.markdown("**Keterangan:** 🟦 *Top 2 (Playoff Upper Bracket)* | ⬜ *Rank 3-6 (Playoff via Play-In)* | 🟥 *Bottom 3 (Not Qualified)*")
+# --- TAB 1: STANDINGS ---
+with tab_standings:
+    if df_standings.empty:
+        st.warning("Belum ada data pertandingan.")
+    else:
+        # Tambahkan logo ke df untuk ditampilkan
+        df_display = df_standings.copy()
+        df_display["Logo"] = df_display["Team"].map(LOGO_MAP).apply(get_image_base64)
+        
+        final_df = df_display[["Logo", "Team", "Match Point", "Match W-L", "Net Game Win", "Game W-L"]]
+        
+        def highlight(row):
+            if row.name <= 2: return ['background-color: rgba(173, 216, 230, 0.15)'] * len(row)
+            elif row.name >= 7: return ['background-color: rgba(240, 128, 128, 0.15)'] * len(row)
+            return [''] * len(row)
+
+        st.dataframe(
+            final_df.style.apply(highlight, axis=1).format({"Net Game Win": "{:+d}"}),
+            use_container_width=True,
+            height=450,
+            column_config={"Logo": st.column_config.ImageColumn("Logo", width="small")}
+        )
+        st.info("💡 Rank 1-2: Upper Bracket Semifinals | Rank 3-6: Play-ins | Rank 7-9: Not Qualified")
+
+# --- TAB 2: PLAYOFF BRACKET ---
+with tab_playoff:
+    if len(df_standings) < 6:
+        st.warning("Klasemen belum mencapai 6 tim. Bagan Playoff otomatis muncul setelah 6 tim terdaftar.")
+    else:
+        # Ambil Top 6
+        top_6 = df_standings.head(6)['Team'].tolist()
+        r1, r2, r3, r4, r5, r6 = top_6[0], top_6[1], top_6[2], top_6[3], top_6[4], top_6[5]
+
+        st.markdown("### Bagan Mekanisme Playoff")
+        
+        # Grid layout untuk simulasi Bracket
+        c1, c2, c3 = st.columns(3)
+
+        with c1:
+            st.markdown("#### [1] Play-ins")
+            # Card Match 1
+            with st.container(border=True):
+                st.write(f"**{r3}** (Rank 3)")
+                st.write(f"**{r6}** (Rank 6)")
+                st.caption("Pemenang vs Rank 2")
+            
+            # Card Match 2
+            with st.container(border=True):
+                st.write(f"**{r4}** (Rank 4)")
+                st.write(f"**{r5}** (Rank 5)")
+                st.caption("Pemenang vs Rank 1")
+
+        with c2:
+            st.markdown("#### [2] Upper Semifinals")
+            with st.container(border=True):
+                st.write(f"**{r2}** (Rank 2)")
+                st.write("🆚 Winner Match 1")
+            
+            with st.container(border=True):
+                st.write(f"**{r1}** (Rank 1)")
+                st.write("🆚 Winner Match 2")
+
+        with c3:
+            st.markdown("#### [3] Lower & Final Stage")
+            st.markdown("""
+            - Tim yang kalah di **Upper Semi** turun ke **Lower Bracket**.
+            - Tim yang kalah di **Play-ins** langsung tereliminasi.
+            - Format: **BO5** (Semifinals) & **BO7** (Grand Final).
+            """)
