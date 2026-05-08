@@ -173,20 +173,20 @@ elif menu == "🔥 Playoff Stage":
                 st.markdown(get_team_html(a2, sa2), unsafe_allow_html=True)
 
         with c2:
-            st.markdown("#### Upper and Lower Bracket Match")
+            st.markdown("#### Bracket Match")
             with st.container(border=True):
-                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 3 (Upper Semi)</div>", unsafe_allow_html=True)
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 3 (Upper Bracket)</div>", unsafe_allow_html=True)
                 st.markdown(get_team_html(h3, sh3), unsafe_allow_html=True)
                 st.markdown(get_team_html(a3, sa3), unsafe_allow_html=True)
             
             with st.container(border=True):
-                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 4 (Upper Semi)</div>", unsafe_allow_html=True)
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 4 (Upper Bracket)</div>", unsafe_allow_html=True)
                 st.markdown(get_team_html(h4, sh4), unsafe_allow_html=True)
                 st.markdown(get_team_html(a4, sa4), unsafe_allow_html=True)
                 
             st.markdown("---")
             with st.container(border=True):
-                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 5 (Lower Semi)</div>", unsafe_allow_html=True)
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 5 (Lower Bracket)</div>", unsafe_allow_html=True)
                 st.markdown(get_team_html(h5, sh5), unsafe_allow_html=True)
                 st.markdown(get_team_html(a5, sa5), unsafe_allow_html=True)
 
