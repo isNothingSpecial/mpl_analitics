@@ -195,7 +195,7 @@ elif menu == "🎲 Probabilitas Playoff":
             styled_prob, 
             use_container_width=True, 
             height=400,
-            column_config={"Logo": st.column_config.ImageColumn("Logo", width="small")}
+            column_config={"logo": st.column_config.ImageColumn("logo", width="small")}
         )
 
 # ==========================================
