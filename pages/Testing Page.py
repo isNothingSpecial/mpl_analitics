@@ -1,7 +1,4 @@
 import streamlit as st
-st.write ("Halaman Testing saja makanya kosong")
-
-import streamlit as st
 import pandas as pd
 import base64
 import os
