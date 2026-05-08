@@ -37,6 +37,17 @@ def load_data():
 df_main = load_data()
 
 st.markdown("<h1 style='text-align: center;'>🏆 MPL INDONESIA ANALYTICS</h1>", unsafe_allow_html=True)
+
+# ==========================================
+# UI NAVIGASI (MENGGUNAKAN RADIO BUTTON AGAR RINGAN)
+# ==========================================
+st.markdown("---")
+menu = st.radio(
+    "Pilih Tampilan:",
+    ["📊 Regular Season Standings", "🔥 Playoff Stage"],
+    horizontal=True,
+    label_visibility="collapsed"
+)
 st.markdown("---")
 
 # PROSES DATA KLASEMEN
@@ -69,12 +80,9 @@ if teams:
     df_standings.index = df_standings.index + 1
 
 # ==========================================
-# UI MENGGUNAKAN TABS
+# HALAMAN 1: KLASEMEN REGULAR SEASON
 # ==========================================
-tab_standings, tab_playoff = st.tabs(["📊 Regular Season Standings", "🔥 Detail Bagan Playoff"])
-
-# --- TAB 1: KLASEMEN REGULAR SEASON ---
-with tab_standings:
+if menu == "📊 Regular Season Standings":
     if df_standings.empty:
         st.info("Belum ada pertandingan yang diselesaikan.")
     else:
@@ -95,10 +103,11 @@ with tab_standings:
         )
         st.markdown("**Keterangan:** 🟦 *Top 2: Upper Bracket* | ⬜ *Rank 3-6: Play-In* | 🟥 *Bottom 3: Not Qualified*")
 
-# --- TAB 2: BAGAN PLAYOFF LENGKAP ---
-# --- TAB 2: BAGAN PLAYOFF LENGKAP ---
-with tab_playoff:
-    st.subheader("Bagan Playoff (Double Elimination)")
+# ==========================================
+# HALAMAN 2: BAGAN PLAYOFF LENGKAP (DENGAN LOGO)
+# ==========================================
+elif menu == "🔥 Playoff Stage":
+    st.subheader("Playoff Stage (Double Elimination)")
     
     if len(df_standings) < 6:
         st.warning("Menunggu data klasemen minimal 6 tim untuk menyusun bagan playoff.")
@@ -117,7 +126,6 @@ with tab_playoff:
             s_h = df_po.at[idx, 'Score Home'] if pd.notna(df_po.at[idx, 'Score Home']) else 0
             s_a = df_po.at[idx, 'Score Away'] if pd.notna(df_po.at[idx, 'Score Away']) else 0
             
-            # Tentukan pemenang dan yang kalah sementara
             winner, loser = f"Winner M{idx+1}", f"Loser M{idx+1}"
             if s_h > s_a: 
                 winner, loser = t_home, t_away
@@ -126,7 +134,20 @@ with tab_playoff:
                 
             return t_home, int(s_h), t_away, int(s_a), winner, loser
 
-        # 4. Kalkulasi Alur Turnamen (M1 sampai M8)
+        # 4. FUNGSI BARU: HTML Wrapper untuk menampilkan Logo + Teks bersisian
+        def get_team_html(team_name, score):
+            logo_path = LOGO_MAP.get(team_name)
+            logo_b64 = get_image_base64(logo_path)
+            
+            # Jika ada logo, render gambar. Jika tidak ada (placeholder), render icon gembok 🔒
+            if logo_b64:
+                img_html = f"<img src='{logo_b64}' width='20' height='20' style='vertical-align: middle; margin-right: 8px; border-radius: 3px;'>"
+            else:
+                img_html = f"<span style='display:inline-block; width:20px; text-align:center; margin-right: 8px;'>🔒</span>"
+                
+            return f"<div style='margin-bottom: 6px; font-size: 14px;'>{img_html}{team_name} <span style='float: right;'><b>{score}</b></span></div>"
+
+        # 5. Kalkulasi Alur Turnamen (M1 sampai M8)
         h1, sh1, a1, sa1, w1, l1 = get_match_info(0, r3, r6)
         h2, sh2, a2, sa2, w2, l2 = get_match_info(1, r4, r5)
         h3, sh3, a3, sa3, w3, l3 = get_match_info(2, r2, w1)
@@ -136,58 +157,58 @@ with tab_playoff:
         h7, sh7, a7, sa7, w7, l7 = get_match_info(6, w5, l6)
         h8, sh8, a8, sa8, w8, l8 = get_match_info(7, w6, w7)
 
-        # 5. Desain Bagan (4 Kolom)
+        # 6. Desain Bagan (4 Kolom)
         c1, c2, c3, c4 = st.columns(4)
 
         with c1:
-            st.markdown("#### Babak 1 (Play-Ins)")
+            st.markdown("#### Play-Ins")
             with st.container(border=True):
-                st.markdown("**Match 1**")
-                st.write(f"{h1} : **{sh1}**")
-                st.write(f"{a1} : **{sa1}**")
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 1</div>", unsafe_allow_html=True)
+                st.markdown(get_team_html(h1, sh1), unsafe_allow_html=True)
+                st.markdown(get_team_html(a1, sa1), unsafe_allow_html=True)
             
             with st.container(border=True):
-                st.markdown("**Match 2**")
-                st.write(f"{h2} : **{sh2}**")
-                st.write(f"{a2} : **{sa2}**")
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 2</div>", unsafe_allow_html=True)
+                st.markdown(get_team_html(h2, sh2), unsafe_allow_html=True)
+                st.markdown(get_team_html(a2, sa2), unsafe_allow_html=True)
 
         with c2:
-            st.markdown("#### Babak 2")
+            st.markdown("#### Upper Bracket")
             with st.container(border=True):
-                st.markdown("**Match 3 (Upper Semi)**")
-                st.write(f"{h3} : **{sh3}**")
-                st.write(f"{a3} : **{sa3}**")
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 3 (Upper Semi)</div>", unsafe_allow_html=True)
+                st.markdown(get_team_html(h3, sh3), unsafe_allow_html=True)
+                st.markdown(get_team_html(a3, sa3), unsafe_allow_html=True)
             
             with st.container(border=True):
-                st.markdown("**Match 4 (Upper Semi)**")
-                st.write(f"{h4} : **{sh4}**")
-                st.write(f"{a4} : **{sa4}**")
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 4 (Upper Semi)</div>", unsafe_allow_html=True)
+                st.markdown(get_team_html(h4, sh4), unsafe_allow_html=True)
+                st.markdown(get_team_html(a4, sa4), unsafe_allow_html=True)
                 
             st.markdown("---")
             with st.container(border=True):
-                st.markdown("**Match 5 (Lower Semi)**")
-                st.write(f"{h5} : **{sh5}**")
-                st.write(f"{a5} : **{sa5}**")
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 5 (Lower Semi)</div>", unsafe_allow_html=True)
+                st.markdown(get_team_html(h5, sh5), unsafe_allow_html=True)
+                st.markdown(get_team_html(a5, sa5), unsafe_allow_html=True)
 
         with c3:
             st.markdown("#### Babak 3 (Finals)")
             with st.container(border=True):
-                st.markdown("**Match 6 (Upper Final)**")
-                st.write(f"{h6} : **{sh6}**")
-                st.write(f"{a6} : **{sa6}**")
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 6 (Upper Final)</div>", unsafe_allow_html=True)
+                st.markdown(get_team_html(h6, sh6), unsafe_allow_html=True)
+                st.markdown(get_team_html(a6, sa6), unsafe_allow_html=True)
                 
             st.markdown("---")
             with st.container(border=True):
-                st.markdown("**Match 7 (Lower Final)**")
-                st.write(f"{h7} : **{sh7}**")
-                st.write(f"{a7} : **{sa7}**")
+                st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 7 (Lower Final)</div>", unsafe_allow_html=True)
+                st.markdown(get_team_html(h7, sh7), unsafe_allow_html=True)
+                st.markdown(get_team_html(a7, sa7), unsafe_allow_html=True)
 
         with c4:
             st.markdown("#### Babak 4")
             st.markdown("<br><br><br>", unsafe_allow_html=True)
             with st.container(border=True):
-                st.markdown("<h4 style='text-align:center; color:gold;'>Grand Final (M8)</h4>", unsafe_allow_html=True)
-                st.write(f"🏆 {h8} : **{sh8}**")
-                st.write(f"🏆 {a8} : **{sa8}**")
+                st.markdown("<h4 style='text-align:center; color:gold; margin-bottom:15px;'>Grand Final (M8)</h4>", unsafe_allow_html=True)
+                st.markdown(get_team_html(h8, sh8), unsafe_allow_html=True)
+                st.markdown(get_team_html(a8, sa8), unsafe_allow_html=True)
                 
     st.info("💡 Bagan ini otomatis membaca hasil dari halaman Match Control Center.")
