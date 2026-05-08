@@ -1,5 +1,5 @@
 import streamlit as st
-st.write ("Hanya Halaman Testing,makanya kosong")
+st.write ("Hanya Halaman Testing,makanya isinya random")
 import plotly.graph_objects as go
 
 st.subheader("Radar Chart: Head-to-Head Stats")
