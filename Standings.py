@@ -173,7 +173,7 @@ elif menu == "🔥 Playoff Stage":
                 st.markdown(get_team_html(a2, sa2), unsafe_allow_html=True)
 
         with c2:
-            st.markdown("#### Upper Bracket")
+            st.markdown("#### Upper and Lower Bracket Match")
             with st.container(border=True):
                 st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 3 (Upper Semi)</div>", unsafe_allow_html=True)
                 st.markdown(get_team_html(h3, sh3), unsafe_allow_html=True)
@@ -191,7 +191,7 @@ elif menu == "🔥 Playoff Stage":
                 st.markdown(get_team_html(a5, sa5), unsafe_allow_html=True)
 
         with c3:
-            st.markdown("#### Babak 3 (Finals)")
+            st.markdown("#### Final Match")
             with st.container(border=True):
                 st.markdown("<div style='color:gray; font-size:12px; margin-bottom:5px;'>Match 6 (Upper Final)</div>", unsafe_allow_html=True)
                 st.markdown(get_team_html(h6, sh6), unsafe_allow_html=True)
@@ -204,7 +204,7 @@ elif menu == "🔥 Playoff Stage":
                 st.markdown(get_team_html(a7, sa7), unsafe_allow_html=True)
 
         with c4:
-            st.markdown("#### Babak 4")
+            st.markdown("#### Grand Finals")
             st.markdown("<br><br><br>", unsafe_allow_html=True)
             with st.container(border=True):
                 st.markdown("<h4 style='text-align:center; color:gold; margin-bottom:15px;'>Grand Final (M8)</h4>", unsafe_allow_html=True)
