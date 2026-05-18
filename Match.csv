@@ -47,22 +47,22 @@ Week 6;RRQ;2;0;Bigetron by Vitality
 Week 6;NAVI;1;2;Team Liquid ID
 Week 6;Onic;2;0;RRQ
 Week 6;Geek Fam ID;2;0;EVOS
-Week 7;Geek Fam ID;;;Dewa United Esport
-Week 7;Bigetron by Vitality;;;Team Liquid ID
+Week 7;Geek Fam ID;1;2;Dewa United Esport
+Week 7;Bigetron by Vitality;0;2;Team Liquid ID
 Week 7;Dewa United Esport;;;Alter Ego
-Week 7;EVOS;;;RRQ
-Week 7;Onic;;;NAVI
-Week 7;RRQ;;;Geek Fam ID
-Week 7;NAVI;;;Bigetron by Vitality
-Week 7;Team Liquid ID;;;EVOS
-Week 8;Bigetron by Vitality;;;Geek Fam ID
-Week 8;Dewa United Esport;;;Onic
-Week 8;EVOS;;;NAVI
-Week 8;Team Liquid ID;;;RRQ
-Week 8;Onic;;;Alter Ego
-Week 8;Dewa United Esport;;;EVOS
-Week 8;Alter Ego;;;Bigetron by Vitality
-Week 8;RRQ;;;NAVI
+Week 7;EVOS;2;0;RRQ
+Week 7;Onic;2;0;NAVI
+Week 7;RRQ;0;2;Geek Fam ID
+Week 7;NAVI;2;1;Bigetron by Vitality
+Week 7;Team Liquid ID;0;2;EVOS
+Week 8;Bigetron by Vitality;0;2;Geek Fam ID
+Week 8;Dewa United Esport;0;2;Onic
+Week 8;EVOS;0;2;NAVI
+Week 8;Team Liquid ID;2;0;RRQ
+Week 8;Onic;2;1;Alter Ego
+Week 8;Dewa United Esport;0;2;EVOS
+Week 8;Alter Ego;0;2;Bigetron by Vitality
+Week 8;RRQ;0;2;NAVI
 Week 9;Bigetron by Vitality;;;Dewa United Esport
 Week 9;Team Liquid ID;;;Alter Ego
 Week 9;Geek Fam ID;;;Team Liquid ID
